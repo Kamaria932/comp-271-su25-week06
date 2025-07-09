@@ -42,7 +42,7 @@ public class DynamicArray {
      */
     private void resize() {
         // Create temporary array of DOUBLE the size of the underlying array
-        String[] temp = new String[2 * this.underlying.length];
+        String[] temp = new String[RESIZE_FACTOR * this.underlying.length]; //used the resize factor declaration to solve program error not used.
         for (int i = 0; i < this.underlying.length; i++) {
             temp[i] = this.underlying[i];
         }
